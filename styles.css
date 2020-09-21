@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    height: 60px;
+    width: 100%;
+    background-color:#ffb122f0;
+}
+ 
+.top-right{
+   text-align: center;
+}
+
+.top-right a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 21px 16px 20px 16px ;
+    margin: 0px 5px;
+    color:white;
+    font-size: 20px;
+}
+.top-right a:hover{
+    background-color: gray;
+}
+
+.middle{
+    height: 600px;
+    width: 100%;
+    background-color:white;
+}
+.middle-content{
+    margin: 0px 100px;
+}
+
+.middle-img{
+    height: 550px;
+    background-image:/*#FFC107;*/url('images/lottery-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45%;
+    float: right;
+    margin: 50px 30px;
+}
+.text-content{
+   margin:200px 0px 0px 100px;
+   position: absolute;
+}
+.text-content h7{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Patua One', cursive;;
+    color: orangered;
+    font-size: 100px;
+}
+
+.third-section{
+    height: 500px;
+    border: 1px red solid;
+    margin: 0px 150px;
+    position: relative;
+    background-color:#ffeb3cd4;
+}
+.section-content{
+    display:flex;
+}
+
+.spin-wheel{
+    height: 500px;
+    margin-left: 100px;
+}
+
+.arrow{
+    width: 80px;
+    padding-top: 200px;
+    opacity: 0.5;
+    
+}
+#win-img{
+    visibility: hidden;
+}
+#lose{
+   height: 100px;
+   width: 100px;
+}
