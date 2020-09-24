@@ -2,72 +2,90 @@
     margin: 0px;
     padding: 0px;
 }
-
+ 
 header{
     height: 60px;
-    width: 100%;
-    background-color:#ffb122f0;
+    background-color:white;
 }
- 
+.top{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+#logo{
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
 .top-right{
-   text-align: center;
+   margin-left: 200px;
 }
 
 .top-right a{
-    text-decoration: none;
     display: inline-block;
-    padding: 21px 16px 20px 16px ;
-    margin: 0px 5px;
-    color:white;
+    padding: 12px 20px ;
+    margin: 3px 5px;
+    color:black;
     font-size: 20px;
+    font-family: 'Carter One', cursive;
+    border-radius: 30px;
 }
 .top-right a:hover{
-    background-color: gray;
+    background-color: rgb(114, 111, 111);
+    color: white;
 }
 
 .middle{
     height: 600px;
     width: 100%;
     background-color:white;
+
 }
 .middle-content{
     margin: 0px 100px;
 }
 
 .middle-img{
-    height: 550px;
-    background-image:/*#FFC107;*/url('images/lottery-1.jpg');
+    height: 500px;
+    background-image:url('images/lottery-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 45%;
+    width: 40%;
     float: right;
     margin: 50px 30px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 }
 .text-content{
-   margin:200px 0px 0px 100px;
-   position: absolute;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 150px;
 }
 .text-content h7{
-    font-family: 'Abril Fatface', cursive;
-    font-family: 'Patua One', cursive;;
-    color: orangered;
+    font-family: 'Carter One', cursive;
+    color:rgb(44, 42, 42);
     font-size: 100px;
 }
 
 .third-section{
-    height: 500px;
-    border: 1px red solid;
-    margin: 0px 150px;
-    position: relative;
-    background-color:#ffeb3cd4;
+    height: 800px;
+    background-color: #F0F8FF;
+    padding-top: 5px;
+    padding-bottom: 50px;
 }
 .section-content{
     display:flex;
+    margin: 100px 150px;
+    height: 700px;
+    background-color: #F0F8FF;
 }
 
 .spin-wheel{
     height: 500px;
-    margin-left: 100px;
 }
 
 .arrow{
@@ -77,9 +95,138 @@ header{
     
 }
 #win-img{
-    visibility: hidden;
+    display: none;
+    height: 300px;
+    margin: 20px 0px 20px 100px;
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.1);
+
 }
-#lose{
-   height: 100px;
-   width: 100px;
+
+.started {
+    padding: 15px 15px;
+    font-family: 'Carter One', cursive;
+    font-weight: 100;
+    font-size:20px;
+    border-radius: 30px;
+    border: none;
+    background-color:rgb(44, 42, 42);
+    margin-left: 5px;
+    outline: none;
+}
+
+.started a{
+    color: white;
+}
+.started a:hover{
+    color:rgb(44, 42, 42);
+    border: none;
+}
+
+.started:hover{
+    cursor: pointer;
+    border: 2px solid rgb(44, 42, 42);
+    background-color: white;
+    color: black;
+
+}
+
+#tryagain{
+   display: none;
+   margin-top: 10px;
+   padding: 10px 10px;
+   border-radius: 5px;
+   border: 2px;
+   margin-left: 180px;
+   font-family: 'Carter One', cursive;
+   font-size: 15px;
+   margin-bottom: 10px;
+   background-color: #ff6207;
+   color: white;
+   outline: none;
+}
+#tryagain:hover{
+   color: #ff6207;
+   background-color: white;
+   border: 2px solid  #ff6207;
+}
+
+.instructions{
+    display: flex-end;
+    width: 40%;
+    background-color: rgb(220,20,60);
+    ;
+}
+.spin{
+    text-align: center;
+    margin-left: 100px;
+    background-color :#FFFF99;
+}
+#check{
+    padding: 10px 10px;
+    font-family: 'Carter One', cursive;
+    font-size:15px;
+    border: none;
+    border-radius: 30px;
+    background-color:#ff6207;
+    color:  white;
+    margin-left: 5px;
+    outline: none;
+}
+
+#check:hover{
+    cursor: pointer;
+    color: #ff6207;
+    background-color: white;
+    border: 2px solid  #ff6207;
+}
+
+.startbutton{
+    padding: 15px 15px;
+    font-family: 'Carter One', cursive;
+    font-weight: 100;
+    font-size: larger;
+    border-radius: 10px;
+    border: 2px rgb(229, 255, 0) solid;
+    color: rgb(229, 255, 0);
+    background-color:blueviolet;
+    margin-top: 60px;
+    cursor: pointer;
+    outline: none;
+}
+
+.startbutton:hover{
+   cursor: pointer;
+   background-color:#ff6207;
+   color: white;
+}
+
+.steps{
+    height: 650px;
+    margin-top: 30px;
+    font-family: 'Carter One', cursive;
+    color:#ffff00e0;
+}
+.steps h1{
+    text-align: center;
+}
+.steps li{
+    margin-left: 60px;
+}
+
+.border{
+  height: 50px;
+  background-color: #F0F8FF ;
+}
+
+.rules{
+    height: 200px;
+}
+.luck{
+    height: 450px;
+    text-align: center;
+}
+#inputnum{
+    width: 50px;
+    height: 30px;
+    border:2px solid rgba(255, 255, 0, 0.88);
 }

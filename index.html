@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
     <title>Lottery</title>
     
 </head>
 <body>
     <header>
         <div class="top">
-            <div class="top-left">
-           
-            </div>
+            <img id="logo" src="images/logo.jpg">
             <div class="top-right">
                 <a id="home" href="#">HOME</a>
                 <a id="play" href="#">PLAY</a>
@@ -29,32 +27,42 @@
             </div>
             <div class="text-content">
                 <h7>PLAY TO WIN</h7>
-                <p></p>
-                <h4>TRY YOUR LUCK</h4>
-                <button id="started" type="button">GET STARTED</button>
+                 <br><br><br>
+                <button class="started" type="button"><a class="started" href="#section-content">GET STARTED</a></button>
             </div>
         </div>
     </div>
     <div id="third-section" class="third-section">
-        <div class="section-content">
+        <div class="section-content" id="section-content">
             <div class="spin">
-              <img class="spin-wheel" src="images/spin.png" alt="spin-wheel">
+              <img class="spin-wheel" src="images/spin.png" alt="spin-wheel"><br>
+              <button class="startbutton" onclick="spinning()" type="button">SPIN THE WHEEL</button>
             </div>
             <div class="arrow1">
                 <img class="arrow" src="images/arrowimg.png" alt="arrow">
             </div>
             <div class="instructions">
-                <form>
-                    <label>Enter the number you got</label>
-                    <input id="inputnum" type="number">
-                    <button type="submit">GO</button>
-                </form>
-                 <img id="win-img" src="images/winimg.jpg">
-                 <img id="lose" src="images/lose.jpg">
-                <button type="button">button</button>
+                <div class="steps">
+                    <div class="rules">
+                        <h1>STEPS TO PLAY!</h1><br>
+                        <li>Spin The Wheel</li>
+                        <li>Enter The Number You Get</li>
+                        <li>Press <b>CHECK</b></li>
+                        <li>Try Your Luck!!!</li>
+                    </div>
+                    <div class="luck">
+                        <label>Enter the number you got</label><br>
+                        <input id="inputnum" type="number">
+                        <button id="check" onclick="result()" type="submit">CHECK</button>
+                        <img id="win-img" src="images/you-won.jpg">
+                        <button type="submit" id="tryagain" onclick="myfunction()">TRY AGAIN</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
+    <div class="border"></div>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
