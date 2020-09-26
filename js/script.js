@@ -20,8 +20,14 @@
     location.reload();
   }
   
-   function result(){
-      var num =document.getElementById('inputnum').value;
+   
+   var modal= document.getElementById("modal");
+   var close = document.getElementById('close');
+   
+   var check=document.getElementById('check');
+    check.onclick = function(){
+     modal.style.display="block";
+     var num =document.getElementById('inputnum').value;
 
       if (num%3 == 0)
       {
@@ -35,6 +41,7 @@
           document.getElementById('win-img').style.display = "block";
           document.getElementById('win-img').src = "images/lose.jpg";
           document.getElementById('tryagain').style.display = "block";
+          document.getElementById('tryagain').innerHTML = "TRY AGAIN";
       }
 
       else
@@ -44,4 +51,7 @@
       }
    }
 
-   
+  function off(){
+    modal.style.display = "none";
+  }
+  

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Lottery</title>
     
 </head>
@@ -52,16 +53,36 @@
                     </div>
                     <div class="luck">
                         <label>Enter the number you got</label><br>
-                        <input id="inputnum" type="number">
-                        <button id="check" onclick="result()" type="submit">CHECK</button>
-                        <img id="win-img" src="images/you-won.jpg">
+                        <input id="inputnum" type="number"><br><br>
+                        <button id="check" type="submit">CHECK</button>
+                         <!-- </div>
+                       <img id="win-img" src="images/you-won.jpg">
                         <button type="submit" id="tryagain" onclick="myfunction()">TRY AGAIN</button>
+                    </div>-->
+
+                    <div id="modal">
+                        <div class="modal-content">
+                            <span id="close" onclick="off()">&times;</span>
+                            <img id="win-img" src="images/you-won.jpg">
+                            <button type="submit" id="tryagain" onclick="myfunction()" >TRY AGAIN</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="border"></div>
+    <footer>
+    	<div class="main-footer">
+    	    <div class="footer-icons">
+        		<a href="#" ><i class="fa fa-youtube-play"></i></a>
+        		<a href="#" ><i class="fa fa-instagram"></i></a>
+        		<a href="#"><i class="fa fa-facebook-square"></i></a>
+        	</div>
+        </div>
+        <div class="footer-csi">
+        	<h4>@CSI:AKGEC 2020</h4>
+        </div>
+    </footer> 
     <script src="js/script.js"></script>
 </body>
 
